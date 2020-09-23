@@ -63,11 +63,24 @@ div{
 <h1>Vind uw route langs steenwegen</h1>
   <form target="_blank">
   Beginpunt:<br>
-  <input type="text" name="A"><br>
+  <input type="text" id="Beginpunt"><br>
   Bestemming:<br>
-  <input type="text" name="B"><br>
-  <input type="submit" formaction="https://www.google.com/maps/dir/gent/oudenaarde/data=!4m4!4m3!2m1!1b1!3e0" value="Submit to another page">
-  <! –– https://www.google.com/maps/dir/plaats1/tussenliggende_plaatsen/plaats2/data=!4m4!4m3!2m1!1b1!3e0 ––> 
+  <input type="text" id="Eindpunt"><br>
+  <input type="submit" formaction="https://www.google.com/maps/dir/gent/oudenaarde/data=!4m4!4m3!2m1!1b1!3e0" value="Submit to another page"><br>
+  <! –– https://www.google.com/maps/dir/plaats1/tussenliggende_plaatsen/plaats2/data=!4m4!4m3!2m1!1b1!3e0 ––>
+	<input type="submit" onclick='saveInputs();'> 
   </form>
 </div>
+<script>
+	function saveInputs() {
+	var a, b;
+	var url1, url2, url_total
+	a = document.getElementById('Beginpunt').value;
+	b = document.getElementById('Eindpunt').value;
+	url1 = 'https://www.google.com/maps/dir/';
+	url2 = '/data=!4m4!4m3!2m1!1b1!3e0';
+	url = url1 + a + '/' + b + url2; 
+	window.open(url)
+	}
+</script>
 </html>
