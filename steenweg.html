@@ -61,14 +61,14 @@ div{
       - N96 (Langs de Maas) <br>
     </p>
 <h1>Vind uw route langs steenwegen</h1>
-  <form target="_blank">
+  <form target="_blank" action='#' onsubmit='saveInputs()' method='post'>
   Beginpunt:<br>
   <input type="text" id="Beginpunt"><br>
   Bestemming:<br>
   <input type="text" id="Eindpunt"><br>
   <! –– <input type="submit" formaction="https://www.google.com/maps/dir/gent/oudenaarde/data=!4m4!4m3!2m1!1b1!3e0" value="Submit to another page" ––>
   <! –– https://www.google.com/maps/dir/plaats1/tussenliggende_plaatsen/plaats2/data=!4m4!4m3!2m1!1b1!3e0 ––>
-	<input type="submit" value="Vind route" onclick='saveInputs();'> 
+	<input type="submit" value="Vind route"> 
   </form>
 </div>
 <script>
@@ -80,7 +80,7 @@ div{
 	url1 = 'https://www.google.com/maps/dir/';
 	url2 = '/data=!4m4!4m3!2m1!1b1!3e0';
 	url = url1 + a + '/' + b + url2; 
-	window.open(url, '_self')
+	window.open(url)
 	}
 </script>
 </html>
