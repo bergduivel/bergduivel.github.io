@@ -1,0 +1,35 @@
+body {
+  background-color:#0071b3;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h2{
+  color: white;
+  }
+p {
+  color: white;
+  font-size: 20px;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+form{
+  color: white;
+  text-align: center;
+  font-family: verdana;
+  font-size: 20px;
+}
+div{
+  border:5px solid;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  font-family: helvetica;
+  height: 100vh;
+}
