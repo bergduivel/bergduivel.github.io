@@ -5,9 +5,23 @@ background-color: #F7F7FA;
 h1{
 color: #fc4c02;
 background-color: white;
+text-align: center;
 }
 
 h2{
 color: #fc4c02;
 background-color: white;
+margin-right: 150px;
+margin-left: 150px;
 }
+
+p{
+margin-right: 150px;
+margin-left: 150px;
+}
+
+iframe{
+margin-right: 150px;
+margin-left: 150px;
+}
+
