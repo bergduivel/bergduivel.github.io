@@ -29,6 +29,7 @@ button{
 padding: 10px 24px;
 border-radius: 8px;
 width: 40%;
+cursor: pointer;
 }
 
 button.button1{
