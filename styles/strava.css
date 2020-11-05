@@ -25,11 +25,25 @@ margin-right: 150px;
 margin-left: 150px;
 }
 
+button{
+padding: 10px 24px;
+border-radius: 8px;
+width: 40%;
+}
+
 button.button1{
-background-color: yellow;
-border-color: green;
+background-color: #fc4c02;
+border: none;
+color: white;
 }
 
 button.button2{
-background-color: white;
+background-color: #F7F7FA;
+border: solid;
+border-width: 1px;
+color: black;
+}
+
+button.button2:hover {
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

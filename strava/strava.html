@@ -4,11 +4,13 @@
 <link rel="stylesheet" href="../styles/strava.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
-function changeMap(id){
-if document.getElementById(id).class != "button1"{
-	document.getElementById(id).class ="button1"
+function changeMap(name){
+	
+	alert(name);
+	if (document.getElementById(name).className == "button1"){
+	document.getElementById(name).className = "button2";
 	}
-}
+	}
 </script>
 </head>
 <body>
@@ -16,9 +18,15 @@ if document.getElementById(id).class != "button1"{
 <h2>Stats</h2>
 <h2>Heat map</h2>
 <p>
-<button id="all_time_button" type="button" class="button1" onClick="changeMap(id)" >All time</button>
-<button id="by_year_button" type="button" class="button2" onClick="changeMap(id)" >Per jaar</button>
+<button id="all_time_button_heat" type="button" class="button1" onclick="changeMap(this.id)" >All time</button>
+<button id="by_year_button_heat" type="button" class="button2" onclick="changeMap(this.id)" >Per jaar</button>
 </p>
-<iframe src='heatmap.html' width="80%" height="800"> </iframe>
+<iframe id="heat_map"' src='heat_map.html' width="80%" height="700"></iframe>
+<h2>Alle ritten</h2>
+<p>
+<button id="all_time_button_rides" type="button" class="button1" onclick="changeMap(this.id)" >All time</button>
+<button id="by_year_button_rides" type="button" class="button2" onclick="changeMap(this.id)" >Per jaar</button>
+</p>
+<iframe id="rides" src='all_rides.html' width="80%" height="700"></iframe>
 </body>
 </html>
