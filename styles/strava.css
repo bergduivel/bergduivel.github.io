@@ -25,3 +25,11 @@ margin-right: 150px;
 margin-left: 150px;
 }
 
+button.button1{
+background-color: yellow;
+border-color: green;
+}
+
+button.button2{
+background-color: white;
+}
