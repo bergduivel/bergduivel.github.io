@@ -57,6 +57,21 @@ span.line{
     cursor: url(https://i.imgur.com/RUE567I.gif), auto;
 }
 
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 45%;
+    float: left;
+    padding: 20px;
+}  
+
+.review {
+ border: 2px solid yellow;
+ color: yellow;
+}
+
 /* @group Blink */
 .blink {
 	-webkit-animation: blink .75s linear infinite;
