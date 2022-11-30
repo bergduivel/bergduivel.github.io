@@ -17,7 +17,7 @@ div {
 .intro{
 	font-size:4em;
 }
-.max { 
+.max {
     display: block;
     width: 860px;
     word-wrap: break-word;
@@ -65,7 +65,16 @@ span.line{
     width: 45%;
     float: left;
     padding: 20px;
-}  
+}
+
+ul {
+  padding-left: 0;
+}
+
+.jumping {
+	text-align: left;
+
+}
 
 .review {
  border: 2px solid yellow;
