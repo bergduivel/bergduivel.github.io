@@ -52,8 +52,6 @@ h1, h2, h3, p, a {
   color: yellow;
 }
 
-
-
 span.line{
   color: red;
 }
@@ -80,9 +78,25 @@ ul {
 
 }
 
-.review {
+
+div.review {
  border: 2px solid yellow;
+ padding: 20px;
+ margin: 20px;
  color: yellow;
+ float: left;
+}
+
+div.review div {
+	float: left;
+}
+
+div.revright {
+	width: 80%;
+}
+
+div.revleft {
+	width: 20%;
 }
 
 /* @group Blink */
